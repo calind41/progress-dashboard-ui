@@ -1,0 +1,434 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Montserrat;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+
+/* Left side navbar styles  */
+.left-side-navbar {
+  border: 1px solid red;
+  height: 100vh;
+  width: 10%;
+  background-color: #F1F3F6;
+}
+.left-side-navbar .logo {
+  margin: auto;
+  margin-top: 30px;
+  width: 50px;
+  height: 50px;
+  background-color: #F1F3F6;
+  font-size: 21px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FD5B28;
+  font-weight: bold;
+  border-radius: 4px;
+  box-shadow: -10px -5px 15px 5px rgba(255,255,255,1), 8px 6px 15px 4px rgba(226,230,240,1);
+}
+
+.wrapper {
+  width: 100%;
+  height: 300px;
+  margin-top: 68px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.wrapper > div:nth-child(1) {
+  margin-top: 10px;
+}
+.wrapper > div:nth-child(1) svg path {
+    fill: gray;
+}
+.wrapper > div:nth-child(2) {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  background-color: #F1F3F6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset 4px 8px 15px 0px #e2e6f0,inset -4px -5px 15px 1px #ffffff;
+}
+.wrapper > div:nth-child(4) img {
+  opacity: 0.5;
+  width: 20px;
+  height: 20px;
+}
+
+/* Center part styles */
+.container .center {
+  width: 65%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+}
+.center h1 {
+  margin-top: 13vh;
+  margin-left: 4vw;
+  font-size: 32px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  height: 32px;
+}
+.center > div {
+  border: 1px solid red;
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.row1 {
+  display: flex;
+}
+
+/* Row1 Card1 styles */
+.center .row1 .card1 {
+  border-radius: 9px;
+  margin-top: 30px;
+  margin-left: 4vw;
+  background-color: #5843BE;
+  width: 28vw;
+  height: 23vh;
+  font-size: 12px;
+  display: flex;
+  flex-direction:  column;
+  padding-left: 20px;
+  user-select: none;
+}
+.center .row1 .card1 .deadline {
+  margin-top: 18px;
+  height: 20px;
+  width: 100%;
+}
+.row1 .card1 .deadline span:nth-child(1) {
+  color: #a49bda;
+  text-transform: uppercase;
+  margin-right: 10px;
+}
+.center .row1 .card1 .deadline span:nth-child(2) {
+  color: #fff;
+}
+.row1 .card1 .exam-unit {
+  margin-top: 10px;
+  width: auto;
+  height: 35px;
+  font-size: 25px;
+  color: #fff;
+  font-weight: bold;
+}
+.row1 .card1 .description {
+  color: #a49bda;
+  width: auto;
+  height: 18px;
+}
+.row1 .card1 .start-testing,
+.row1 .card1 .start-testing div a {
+  color: #fff;
+}
+.row1 .card1 .start-testing {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+  width: auto;
+  margin-top: 5px;
+}
+.row1 .card1 .start-testing > .members {
+  display: flex;
+  position: relative;
+  right: 7px;
+}
+.row1 .card1 .start-testing .members .member {
+  width: 22px;
+  height: 22px;
+  border-radius: 100%;
+  background-color: #FFCD4C;
+  font-size: 10px;
+}
+.row1 .card1 .start-testing .members .member:last-child {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 0;
+  position: relative;
+  right: 5px;
+}
+.row1 .card1 .start-testing .members .member img {
+  width: inherit;
+  height: inherit;
+  border-radius: inherit;
+  object-fit: fill;
+  border: 1.7px solid #fff;
+}
+.row1 .card1 .start-testing .members .member:nth-child(3) {
+  z-index: 1;
+}
+.row1 .card1 .start-testing .members .member:nth-child(2) {
+  position: relative;
+  left: 5px;
+  z-index: 2;
+}
+.row1 .card1 .start-testing .members .member:nth-child(1) {
+  position: relative;
+  left: 10px;
+  z-index: 5;
+}
+.row1 .card1  .start-testing > div:nth-child(2) {
+  margin-right: 7%;
+}
+
+/* Row1 Card2 styles */
+.row1 .card2 {
+  background-color: #FFEDE6;
+  width: 10vw;
+  height: 23vh;
+  font-size: 12px;
+  border-radius: 9px;
+  margin-top: 30px;
+  margin-left: 2.5vw;
+  display: flex;
+  flex-direction: column;
+}
+.row1 .card2 .checkmark {
+  width: auto;
+  height: auto;
+  margin-left: 1.2vw;
+  margin-top: 20px;
+}
+.row1 .card2 .checkmark svg {
+  fill: #ff8b45;
+}
+.row1 .card2 h1 {
+  letter-spacing: 1px;
+  font-size: 13px;
+  font-weight: bolder;
+  width: auto;
+  height: auto;
+  margin-top: 15px;
+  margin-left: 0;
+  padding-left: 1.2vw;
+  color: #ff8b45
+}
+.row1 .card2 p {
+  margin-top: 7px;
+  width: auto;
+  height: auto;
+  padding-left: 1.2vw;
+  line-height: 15px;
+  padding-top: 1vh;
+  color: #FFA067;
+  opacity: 0.65;
+  font-size: 12px;
+}
+
+/* Row1 card3 styles */
+.row1 .card3 {
+  background-color: #F6F4FF;
+  width: 10vw;
+  height: 23vh;
+  font-size: 12px;
+  border-radius: 9px;
+  margin-top: 30px;
+  margin-left: 2.5vw;
+  display: flex;
+  flex-direction: column;
+}
+.row1 .card3 .checkmark {
+  width: auto;
+  height: auto;
+  margin-left: 1.2vw;
+  margin-top: 20px;
+}
+.row1 .card3 .checkmark svg {
+  fill: #9082d1;
+}
+.row1 .card3 h1 {
+  letter-spacing: 1px;
+  font-size: 13px;
+  font-weight: bolder;
+  width: auto;
+  height: auto;
+  margin-top: 15px;
+  margin-left: 0;
+  padding-left: 1.2vw;
+  color: #9082d1;
+}
+.row1 .card3 p {
+  margin-top: 7px;
+  width: auto;
+  height: auto;
+  padding-left: 1.2vw;
+  line-height: 15px;
+  padding-top: 1vh;
+  color: #9D8FDA;
+  opacity: 0.65;
+  font-size: 12px;
+}
+
+/* Row2 card1 styles */
+.row2 {
+  border: 1px solid blue !important;
+  width: 100%;
+  height: auto;
+  display: flex;
+}
+.row2 .card1 {
+  border: 1px solid purple;
+  width: 30.5vw;
+  height: 240px;
+  margin-left: 4vw;
+  border-radius: 9px;
+}
+.row2 .card1 .header {
+  margin-top: 15px;
+  width: auto;
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+}
+.row2 .card1 .header span {
+  font-weight: 900;
+  margin-left: 2vw;
+  font-stretch: ultra-expanded;
+}
+.row2 .card1 .header svg {
+  margin-right: 2vw;
+  width: 18px;
+  opacity: 0.5;
+}
+.row2 .card1 .nr-of-students {
+  color: #c5c8d1;
+  font-size: 12px;
+  margin-left: 2vw;
+  font-weight: bolder;
+}
+.row2 .card1 .group-homework {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  margin-top: 15px !important;
+  width: 87%;
+  margin: auto;
+  height: 86px;
+  border-radius: 9px;
+  background-color: #FFA067;
+}
+.row2 .card1 .group-homework h1 {
+  font-size: 13px;
+  font-weight: bold;
+  margin-top: 15px;
+  margin-left: 1.5vw;
+  width: auto;
+  height: auto;
+}
+.row2 .card1 .group-homework p {
+  font-size: 10px;
+  width: auto;
+  height: auto;
+  margin-left: 1.5vw;
+  margin-top: 10px;
+}
+.row2 .card1 .group-homework svg {
+  position: absolute;
+  top: 32%;
+  right: 2vw;
+  width: 17px;
+  fill: #fff;
+}
+.row2 .card1 .timetable-lesson {
+  font-size: 13px;
+  font-weight: 900;
+  margin-top: 15px;
+  margin-left: 2vw;
+  height: 20px;
+  width: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.row2 .card1 .timetable-lesson span:nth-child(2) {
+  margin-right: 2.1vw;
+}
+.row2 .card1 .unit-desc {
+  margin-left: 2vw;
+  font-size: 12px;
+  height: 20px;
+  width: auto;
+  color: #c5c8d1;
+}
+
+/* Row2 card2 styles */
+.row2 .card2 {
+  width: 16vw;
+  margin-left: 2vw;
+  display: flex;
+  flex-direction: column;
+}
+.row2 .card2 .spanish-flag {
+  width: 3.7vw;
+  height: 6.4vh;
+  margin-top: 35px;
+  margin-left: 1.4vw;
+  border-radius: 8px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+box-shadow: 0px 0px 26px 15px rgba(230,232,235,1);
+}
+.row2 .card2 .spanish-flag img {
+  width: 2.5vw;
+  height: 6vh;
+}
+.row2 .card2 h1 {
+  letter-spacing: 0px;
+  line-height: 28px;
+  margin-top: 10px;
+  margin-left: 0;
+  padding-left: 1.4vw;
+  width: auto;
+  height: 70px;
+  font-size: 25px;
+}
+.row2 .card2 .progress-bar {
+  width: 100%;
+  height:80px;
+}
+.row2 .card2 .progress-bar .value {
+  font-size: 13px;
+  font-weight: 900;
+  width: auto;
+  height: 20px;
+  margin-top: 14px;
+  margin-left: 1.4vw;
+}
+.row2 .card2 .progress-bar .bar {
+  position: relative;
+  width: 13vw;
+  margin-left: 1.4vw;
+  height: 8.4px;
+  background-color: #F1F3F6;
+  border-radius: 10px;
+}
+.row2 .card2 .progress-bar .bar .filled {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: inherit;
+  height: inherit;
+  width: 75%;
+  background-color: #FFA067;
+}
